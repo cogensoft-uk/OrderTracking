@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="cogensoft_tracking" translate="label" type="text" sortOrder="301" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Tracking Configuration</label>
+            <tab>sales</tab>
+            <resource>Cogensoft_OrderTracking::tracking</resource>
+            <group id="general" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Order Tracking</label>
+                <field id="merchant_id" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Merchant ID</label>
+                    <comment>The merchant ID as supplied by Cogensoft</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,22 @@
+<!---- Cogensoft Tracking Code ---->
+<script type="text/javascript" language="javascript">
+  var of_ssid = '{{MERCHANT_ID}}';
+  var cs = '{{TOTAL}}';
+  var oi = '{{ORDER_ID}}';
+  var it = 1;
+  var id = '';
+  var pairs = document.cookie.split("; "),
+    count = pairs.length, parts;
+  while (count--) {
+    parts = pairs[count].split("=");
+    if (parts[0] === "user" && parts[1] === "usr")
+      id = parts[2];
+  }
+
+</script>
+
+<script type="text/javascript" language="javascript" src="https://tracking.cogensoft.co.uk/t.js"></script>
+<noscript>
+    <img border="0" src="https://tracking.cogensoft.co.uk/ProcessProductCheckout.ashx?of_ssid={{MERCHANT_ID}}&cs={{TOTAL}}&it=1&oi={{ORDER_ID}}" />
+</noscript>
+<!---- End Cogensoft Tracking Code ---->
